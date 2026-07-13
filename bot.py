@@ -42,7 +42,7 @@ DEFAULT_CHECKER_APIS = [
     {'id': 'api3', 'name': 'Fallback', 'url': 'https://con-curency.onrender.com/shopify?', 'max_workers': 150, 'enabled': True, 'role': 'fallback'},
     {'id': 'api4', 'name': 'Quaternary', 'url': '', 'max_workers': 150, 'enabled': False, 'role': 'primary'},
 ]
-ABSOLUTE_MAX_API_WORKERS = 1500   # per-API ceiling (/apiworkers) — no silent cap
+ABSOLUTE_MAX_API_WORKERS = 2000   # per-API ceiling (/apiworkers) — no silent cap
 
 
 def _normalize_api_workers(n):
