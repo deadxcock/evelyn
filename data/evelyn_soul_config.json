@@ -1,0 +1,46 @@
+{
+  "global_proxy_fallback_enabled": false,
+  "checker_apis": [
+    {
+      "id": "api1",
+      "name": "Primary",
+      "url": "https://juicyworld.onrender.com/shopify?",
+      "max_workers": 400,
+      "enabled": true,
+      "role": "primary"
+    },
+    {
+      "id": "api2",
+      "name": "Secondary",
+      "url": "http://97.74.94.172:8000/shopify?",
+      "max_workers": 600,
+      "enabled": true,
+      "role": "primary"
+    },
+    {
+      "id": "api3",
+      "name": "Tertiary",
+      "url": "https://six2s.onrender.com/shopify?",
+      "max_workers": 400,
+      "enabled": true,
+      "role": "primary",
+      "https://con-curency.onrender.com/shopify?": 150
+    },
+    {
+      "id": "api4",
+      "name": "Quaternary",
+      "url": "https://six2s-10.onrender.com/shopify?",
+      "max_workers": 400,
+      "enabled": true,
+      "role": "primary"
+    }
+  ],
+  "tier_workers": {
+    "free": 15,
+    "basic": 20,
+    "pro": 30,
+    "max": 50,
+    "ultra": 100,
+    "owner": 100
+  }
+}
